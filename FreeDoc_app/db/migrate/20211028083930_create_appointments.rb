@@ -15,4 +15,4 @@ end
   #  add_reference :appointments, :patient, foreign_key: true
   #end
 
-end
+#end
