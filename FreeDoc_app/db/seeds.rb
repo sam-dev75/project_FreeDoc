@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+100.times do |index|
+  Doctor.create(first_name: "Nom#{index}", last_name: "Prénom#{index}", specialty:"specialty#{index}",zip_code:"zip_code#{index}")
+end
+
+100.times do |index|
+  Patient.create(first_name: "Nom#{index}", last_name: "Prénom#{index}")
+end
+
+100.times do |index|
+  Appointment.create(datetime:Time.new)
+end
+
